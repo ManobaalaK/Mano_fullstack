@@ -1,0 +1,31 @@
+.Container{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  background-color: rgb(255, 174, 127);
+  
+}
+.Item{
+  padding:30px;
+  background-color: rgb(210, 127, 255);
+  border: 3px solid #000;
+  align-items: center;
+  text-align: center;
+}
+@media( max-width:425px){
+  .Container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width:768px){
+  .Container{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (min-width:900px){
+  .Container{
+    grid-template-columns: repeat(5,1fr);
+  }
+}
+
